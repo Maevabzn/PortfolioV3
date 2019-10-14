@@ -1,0 +1,332 @@
+
+body{
+  background-color: #303030;
+  color: aliceblue;
+}
+ul{
+  display: flex;
+  justify-content: flex-end;
+}
+li{
+  margin-left: 50px;
+  margin-right: 50px;
+  color: white;
+  transform: none;
+}
+li:hover{
+  color:#11B5E4;
+  font-weight: 900;
+}
+.active{
+    color:#11B5E4;
+    font-weight: 900;
+}
+.projects{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+.design img:hover{
+  border: #11B5E4 solid 5px;
+}
+.developpement img:hover{
+  border: #11B5E4 solid 5px;
+}
+.projects img{
+  width: 50%;
+}
+h1{
+  writing-mode: vertical-rl;
+  text-orientation: upright;
+  letter-spacing: 0.8em;
+  font-weight: 900;
+}
+.first{
+  display: flex;
+  margin-bottom: 100px;
+}
+.first h2{
+  font-weight: 900;
+}
+.second{
+  display:flex;
+}
+.second img {
+  height:350px;
+  margin-left: 350px;
+}
+.second p{
+border: 0.5px solid #000000;
+margin-top:300px;
+width: 700px;
+padding: 60px 90px 60px 90px;
+font-family: roboto;
+line-height: 38px;
+}
+.prenium{
+  display:flex;
+  justify-content: center;
+  overflow: hidden;
+  height:60vh;
+}
+.perspective-text{
+  color:#11B5E4;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 65px;
+  
+  font-weight: bolder;
+  letter-spacing: -2px;
+  text-transform: uppercase;
+}
+.perspective-line{
+  height: 50px ;
+  overflow: hidden;
+  position: relative;
+}
+.perspective-text p{
+  margin: 0;
+  height: 50px;
+  line-height: 50px;
+  font-weight: 900;
+  transition: all 0.5s ease-in-out
+}
+.perspective-line:nth-child(odd){
+  transform: skew(60deg, -30deg) scaleY(0.667);
+}
+.perspective-line:nth-child(even){
+  transform: skew(0deg, -30deg) scaleY(1.333);
+}
+.perspective-text:hover p{
+transform: translate(0,-50px);
+}
+.perspective-line:nth-child(1){
+  left: 29px;
+}
+.perspective-line:nth-child(2){
+  left: 58px;
+}
+.perspective-line:nth-child(3){
+  left: 87px;
+  color: black;
+}
+.perspective-line:nth-child(4){
+  left: 116px;
+}
+.perspective-line:nth-child(5){
+  left: 145px;
+}
+.perspective-line:nth-child(6){
+  left: 174px;
+}
+.fourth{
+  margin-top:100px;
+  display: flex;
+
+}
+.button{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+.social-button{
+  min-width: 11rem;
+  display: flex;
+  justify-content: center;
+  height: 2.1rem;
+  padding: 0.375rem 0.375rem 0;
+  background: #eee;
+  border-radius:0.25rem;
+  box-shadow: inset 0 1px 2px rgb(0, 0, 0,3);
+  perspective: 30rem;
+  margin-right: 70px;
+  margin-left: 70px;
+}
+.cover{
+  transform-origin: center bottom;
+  transform-style: preserve-3d;
+  text-align: center;
+  z-index: 99;
+}
+.cover,.cover>*{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.cover svg{
+  width: 40px;
+  height: 40px;
+  filter: drop-shadow(0 1px 2px rgb(0,0,0,0.25));
+}
+.inner,.outer {
+  border-radius: 0.25rem;
+  background-image: linear-gradient(top, transparent 0%,rgba(0,0,0,0.1)100%);
+}
+.twitter .inner{
+  background-color: #67e2fe;
+}
+.twitter .outer{
+  background-color: #2ec8fa;
+  transform:translateZ(0.25rem); 
+}
+.twitter .edge{
+  background-color: #20c7f3;
+
+  top: 0.25rem;
+  height: 0.25rem;
+  transform: rotateX(90deg);
+  transform-origin: center top;
+}
+.social-button:hover .cover{
+  transform: rotateX(-120deg);
+}
+.social-button, .social-button div{
+  transition-duration: 0.7s;
+  transition-timing-function: ease;
+}
+.shadow{
+  position: absolute;
+  top:100%;
+  left: 0;
+  width: 100%;
+  height: 3.2rem;
+  border-radius: 0.5rem;
+  opacity: 0;
+  background-image: linear-gradient(to bottom, rgba(0,0,0,0.3)0%,transparent 100%);
+  transform:rotateX(90deg);
+  transform-origin: center top;
+}
+.social-button:hover .shadow{
+  transform:rotateX(45deg) scale(0.95); 
+  opacity: 1;
+}
+.facebook .inner {
+  background-color: #3b5998;
+}
+.facebook .outer {
+  background-color: #476ab4;
+  
+}
+.facebook .edge {
+  background-color: #2f477c;
+  top: 0.25rem;
+  height: 0.25rem;
+  transform: rotateX(90deg);
+  transform-origin: center top;
+}
+.facebook-add{
+  text-decoration: none;
+  color: #3b5998;
+}
+.facebook-logo{
+  width:22px
+}
+.github .inner {
+  background-color: #1d1f22;
+}
+.github .outer {
+  background-color: #202427;
+  
+}
+.github .edge {
+  background-color: #1b1f23;
+  top: 0.25rem;
+  height: 0.25rem;
+  transform: rotateX(90deg);
+  transform-origin: center top;
+}
+.github .cover svg{
+  height: 30px;
+}
+.github-follow{
+  text-decoration: none;
+  color: #1b1f23;
+}
+.github-logo{
+  width:22px
+}
+.section-social{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.gmail .inner {
+  background-color: #d23f31;
+}
+.gmail .outer {
+  background-color: #db4437;
+  
+}
+.gmail .edge {
+  background-color: #db4437;
+  top: 0.25rem;
+  height: 0.25rem;
+  transform: rotateX(90deg);
+  transform-origin: center top;
+}
+.gmail .cover svg{
+  height: 30px;
+}
+.gmail-follow{
+  text-decoration: none;
+  color: #1b1f23;
+}
+.gmail-logo{
+  width:22px
+}
+.gmail-send{
+  text-decoration: none;
+  color: #db4437;
+}
+.title-design{
+  font-size:50px;
+  letter-spacing: 0.8em;
+}
+.design-container{
+  display: flex;
+}
+.container{
+height: 750px;
+width: 500px;
+border:solid 1px white;
+}
+h4{
+  margin-left: 30px;
+  font-size: 30px;
+}
+.projects-design-first{
+  background-image: url("images/Zenphone\ 6\ edition\ 30_2880x1035.jpg");
+  background-size:contain;
+  background-attachment: fixed; 
+  background-repeat: no-repeat;
+}
+.projects-design-second{
+  background-image: url("images/ROG-PHONE-II_2880x1035.jpg");
+  background-size:cover;
+  background-attachment: fixed; 
+}
+.projects-design-third{
+  background-image: url("images/Zenbook\ Pro\ Duo\ 2880x1035.jpg");
+  background-size:cover;
+  background-attachment: fixed; 
+}
+.projects-design-fourth{
+  background-image: url("images/design.jpg");
+  background-size:cover;
+  background-attachment: fixed; 
+}
+.projects-design-fifth{
+  background-image: url("images/design.jpg");
+  background-size:cover;
+  background-attachment: fixed; 
+}
+.projects-container{
+  display: flex;
+}
+.second-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
