@@ -58,11 +58,11 @@ h1{
   margin-left: 100px;
 }
 .second h4{
-  margin-top:190px;
+  margin-top:150px;
 }
 .second p{
   width: 700px;
-  padding: 20px 80px 50px 80px;
+  padding: 20px 80px 0px 80px;
   font-family: roboto;
   line-height: 60px;
   font-weight: 500;
@@ -137,7 +137,6 @@ h1{
 .fourth{
   margin-top:100px;
   display: flex;
-  
 }
 .button{
   display: flex;
@@ -305,36 +304,31 @@ h1{
 }
 .container{
   height: 750px;
-  width: 500px;
-  border:solid 1px white;
+  width: 250px;
+  background-size: auto 100%;
+  background-position: left;
+  background-repeat: repeat;
 }
+
 h4{
   margin-left: 30px;
   font-size: 30px;
 }
 .projects-design-first{
-  background-image: url("images/zenphone6.png");
-  background-size:contain;
-  background-attachment: fixed; 
-  background-repeat: no-repeat;
+  background-image: url("images/Zenphone\ 6\ edition\ 30_2880x1035.jpg");
+
 }
 .projects-design-second{
   background-image: url("images/ROG-PHONE-II_2880x1035.jpg");
-  background-size:cover;
-  background-attachment: fixed; 
 }
 .projects-design-third{
-  background-image: url("images/zenbookpro.jpg");
+  background-image: url("images/Zenbook\ Pro\ Duo\ 2880x1035.jpg");
 }
 .projects-design-fourth{
-  background-image: url("images/design.jpg");
-  background-size:cover;
-  background-attachment: fixed; 
+  background-image: url("images/Back\ to\ School_2880x1035.jpg");
 }
 .projects-design-fifth{
-  background-image: url("images/design.jpg");
-  background-size:cover;
-  background-attachment: fixed; 
+  background-image: url("images/Back\ to\ Work_2880x1035.jpg");
 }
 .projects-container{
   display: flex;
@@ -353,10 +347,10 @@ h4{
 .containers{
   height: 260px;
   width: 90vw;
-  border:solid 1px white;
   display: flex;
+  margin-bottom: 100px;
 }
-button{
+.Developpement-container button{
   border-radius: 6px;
   background-color: #11B5E4;
   text-decoration: none;
@@ -365,21 +359,23 @@ button{
   padding: 6px 12px;
   font-size: 15px;
 }
-.projects-developpement-first img{
-  width: 23.5%;
+.container__img{
+  width: 408px;
+  height: 258px;
+  contain: content;
 }
-.projects-developpement-second img{
-  width: 23.5%;
+
+.container__img img{
+  margin: auto;
+  object-fit: cover;
+  max-height: 260px;
 }
-.projects-developpement-third img{
-  width: 23.5%;
+
+.container-developpement-projects img{
+  min-height: 100%;
+  min-width: 100%;
 }
-.projects-developpement-fourth img{
-  width: 23.5%;
-}
-.projects-developpement-fifth img{
-  width: 23.5%;
-}
+
 .projects-developpement-first{
   display: flex;
 }
@@ -426,4 +422,23 @@ a{
   font-family: roboto;
   line-height: 60px;
   font-weight: 500;
+}
+.second h3{
+  text-decoration: underline #11B5E4 ; 
+  color: whitesmoke;
+  font-family: roboto;
+  font-weight: 500;
+  margin-left: 85px;
+}
+.fourth h2{
+  text-align: center;
+  width:100%;
+  margin-bottom: 100px;
+  color: #11B5E4;
+  font-weight: 900;
+  font-size:40px;
+}
+.text-contact{
+  display: inline;
+  justify-content: center;
 }
