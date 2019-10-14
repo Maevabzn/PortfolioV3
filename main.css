@@ -6,20 +6,22 @@ body{
 ul{
   display: flex;
   justify-content: flex-end;
+  text-decoration: none;
 }
 li{
   margin-left: 50px;
   margin-right: 50px;
   color: white;
   transform: none;
+  text-decoration: none;
 }
 li:hover{
   color:#11B5E4;
   font-weight: 900;
 }
 .active{
-    color:#11B5E4;
-    font-weight: 900;
+  color:#11B5E4;
+  font-weight: 900;
 }
 .projects{
   display: flex;
@@ -52,16 +54,30 @@ h1{
   display:flex;
 }
 .second img {
-  height:350px;
-  margin-left: 350px;
+  height: 550px;
+  margin-left: 100px;
+}
+.second h4{
+  margin-top:190px;
 }
 .second p{
-border: 0.5px solid #000000;
-margin-top:300px;
-width: 700px;
-padding: 60px 90px 60px 90px;
-font-family: roboto;
-line-height: 38px;
+  width: 700px;
+  padding: 20px 80px 50px 80px;
+  font-family: roboto;
+  line-height: 60px;
+  font-weight: 500;
+}
+.second hr{
+  border:none;
+  height:20px;
+  width:150px ;
+  margin: 0;
+  margin-left: 30px;
+  background-color:#11B5E4  ;
+  text-decoration: none;
+}
+.second span{
+  color: #11B5E4;
 }
 .prenium{
   display:flex;
@@ -97,7 +113,7 @@ line-height: 38px;
   transform: skew(0deg, -30deg) scaleY(1.333);
 }
 .perspective-text:hover p{
-transform: translate(0,-50px);
+  transform: translate(0,-50px);
 }
 .perspective-line:nth-child(1){
   left: 29px;
@@ -121,13 +137,13 @@ transform: translate(0,-50px);
 .fourth{
   margin-top:100px;
   display: flex;
-
+  
 }
 .button{
   display: flex;
   align-items: center;
   justify-content: center;
-
+  
 }
 .social-button{
   min-width: 11rem;
@@ -173,7 +189,7 @@ transform: translate(0,-50px);
 }
 .twitter .edge{
   background-color: #20c7f3;
-
+  
   top: 0.25rem;
   height: 0.25rem;
   transform: rotateX(90deg);
@@ -288,16 +304,16 @@ transform: translate(0,-50px);
   display: flex;
 }
 .container{
-height: 750px;
-width: 500px;
-border:solid 1px white;
+  height: 750px;
+  width: 500px;
+  border:solid 1px white;
 }
 h4{
   margin-left: 30px;
   font-size: 30px;
 }
 .projects-design-first{
-  background-image: url("images/Zenphone\ 6\ edition\ 30_2880x1035.jpg");
+  background-image: url("images/zenphone6.png");
   background-size:contain;
   background-attachment: fixed; 
   background-repeat: no-repeat;
@@ -308,9 +324,7 @@ h4{
   background-attachment: fixed; 
 }
 .projects-design-third{
-  background-image: url("images/Zenbook\ Pro\ Duo\ 2880x1035.jpg");
-  background-size:cover;
-  background-attachment: fixed; 
+  background-image: url("images/zenbookpro.jpg");
 }
 .projects-design-fourth{
   background-image: url("images/design.jpg");
@@ -329,4 +343,87 @@ h4{
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.Developpement-container{
+  display: flex;
+}
+.container-developpement-projects{
+  display: inline;
+}
+.containers{
+  height: 260px;
+  width: 90vw;
+  border:solid 1px white;
+  display: flex;
+}
+button{
+  border-radius: 6px;
+  background-color: #11B5E4;
+  text-decoration: none;
+  border: none;
+  color: white;
+  padding: 6px 12px;
+  font-size: 15px;
+}
+.projects-developpement-first img{
+  width: 23.5%;
+}
+.projects-developpement-second img{
+  width: 23.5%;
+}
+.projects-developpement-third img{
+  width: 23.5%;
+}
+.projects-developpement-fourth img{
+  width: 23.5%;
+}
+.projects-developpement-fifth img{
+  width: 23.5%;
+}
+.projects-developpement-first{
+  display: flex;
+}
+.nissin-projects{
+  display: inline;
+  margin-left: 40px;
+}
+.title-developpement{
+  font-size:45px;
+  letter-spacing: 0.8em;
+}
+a{
+  text-decoration: none;
+}
+.skills h3{
+  font-size: 30px;
+  font-weight: 900;
+  margin-left: 100px;
+}
+.skills svg{
+  margin-left: 100px;
+  width: 5%;
+}
+.logo-skills{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.passion h3{
+  font-size: 30px;
+  font-weight: 900;
+  margin-left: 100px;
+}
+.passion svg{
+  margin-left: 100px;
+  width: 5%;
+}
+.passion div{
+  display: flex;
+}
+.passion p{
+  width: 700px;
+  padding: 20px 80px 50px 80px;
+  font-family: roboto;
+  line-height: 60px;
+  font-weight: 500;
 }
